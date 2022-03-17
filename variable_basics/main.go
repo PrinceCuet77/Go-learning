@@ -27,7 +27,7 @@ func main() {
 	str := "Learning golang"
 	fmt.Println(str)
 
-	// I can use expressions in short declaration 
+	// I can use expressions in short declaration
 	sum := 5 + 3.3
 	fmt.Println(sum)
 
@@ -47,9 +47,9 @@ func main() {
 
 	// Multiple declaration is good for readability
 	var (
-		id float64
+		id        float64
 		firstName string
-		gender bool
+		gender    bool
 	)
 	_, _, _ = id, firstName, gender
 
