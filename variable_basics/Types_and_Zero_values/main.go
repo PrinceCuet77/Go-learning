@@ -12,4 +12,15 @@ func main() {
 	// If variable is pointer then zero value is 'nil'
 
 	fmt.Println(value, price, name, done)
+
+	// Simgle line comment
+	/*
+		Multiple line comment
+	*/
+
+	// Type casting
+	var fl float64 = 3.4
+
+	var val int = int(fl)
+	fmt.Println(val)
 }
