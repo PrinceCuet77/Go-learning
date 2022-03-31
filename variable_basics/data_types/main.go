@@ -24,24 +24,24 @@ func main() {
 
 	// rune (alias for int32)
 	var r rune = 'f'
-	fmt.Printf("%T\n", r)
-	fmt.Println(r)
-	fmt.Printf("%x\n", r)
-	fmt.Printf("%c\n", r)
+	fmt.Printf("%T\n", r) // Output: int32
+	fmt.Println(r)        // Output: 102
+	fmt.Printf("%x\n", r) // Output: 66
+	fmt.Printf("%c\n", r) // Output: f
 
 	// byte (alias for uint8)
 	var b bool = true
-	fmt.Printf("%T\n\n", b)
+	fmt.Printf("%T\n\n", b) // Output: bool
 
 	// Array type
 	// An array is a numbered sequence of elements of a single type, called the element type.
 	var numbers = [4]int{4, 5, -9, 100}
-	fmt.Printf("%T\n", numbers)
+	fmt.Printf("%T\n", numbers) // Output: [4]int
 
 	// Slice type
 	// An array has a fixed length but a slice has a dynamic length (It can shink or grow).
-	var cities = []string{"London", "Dhaka", "New York"}
-	fmt.Printf("%T\n", cities)
+	var cities = []string{"London", "Dhaka", "New York"} 
+	fmt.Printf("%T\n", cities) // Output: []string
 
 	// Map type
 	// A map is an unordered group of elements of one type, indexed by a set of unique keys of another type.
@@ -49,7 +49,7 @@ func main() {
 		"USD": 2332.2,
 		"EUR": 511.11,
 	}
-	fmt.Printf("%T\n", balances)
+	fmt.Printf("%T\n", balances) // Output: map[string]float64
 
 	// Stuct type (User defined type)
 	// A struct is a sequence of named elements, called fields, each of which has a name and a type.
@@ -60,19 +60,20 @@ func main() {
 	}
 
 	var you Person
-	fmt.Printf("%T\n", you)
+	fmt.Printf("%T\n", you) // Output: main.Person
 
 	// Pointer type
 	// A pointer is a variable that stores the memory address of another variable.
 	// The value of an uninitialized pinter is 'nil'.
 	var x int = 2
 	ptr := &x
-	fmt.Printf("ptr is of type %T with the value of %v\n", ptr, ptr)
+	fmt.Printf("ptr is of type %T with the value of %v\n", ptr, ptr) // Output: ptr is of type *int with the value of 0x0000140e0
 
 	// function type
-	fmt.Printf("%T\n", f)
+	fmt.Printf("%T\n", f) // Output: func()
 }
 
+// Function
 func f() {
 
 }

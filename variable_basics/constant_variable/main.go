@@ -19,7 +19,7 @@ func main() {
 		min2 = -100
 		min3 = -300
 	)
-	fmt.Println(min1, min2, min3)
+	fmt.Println(min1, min2, min3) // Output: -500 -100 -300
 
 	// While grouping, all the uninitialized variable will stored the value from the previous variable.
 	const (
@@ -27,7 +27,7 @@ func main() {
 		max2 // max2 = max1
 		max3 // max3 = max2
 	)
-	fmt.Println(max1, max2, max3)
+	fmt.Println(max1, max2, max3) // Output: -500 -500 -500
 
 	// Constrants rules:
 	// 1. I can't change a constant
@@ -43,7 +43,7 @@ func main() {
 
 	// 4. I can initiate a constant at compile time.
 	const lengthOfString = len("Hello") // 'len' is a compile time function.
-	fmt.Println(lengthOfString)
+	fmt.Println(lengthOfString)         // Output: 5
 
 	//------------------- Typed & Untyped constant -------------------------
 	const a float64 = 5.1 // Typed constant
@@ -54,8 +54,8 @@ func main() {
 	// const y float64 = 2.2 * float64(x) -> No error. Because, I will do type casting.
 
 	const x = 5
-	const y = 2.2 * x // Because, x & y both are untyped constant
-	fmt.Printf("%T\n\n", y)
+	const y = 2.2 * x       // Because, x & y both are untyped constant
+	fmt.Printf("%T\n\n", y) // Output: float64
 
 	const xx int = 50
 	var i int = xx // No error. Because, 'i' and 'xx' are both typed constant
@@ -74,7 +74,7 @@ func main() {
 		c1 = iota // iota = 1
 		c2 = iota // iota = 2
 	)
-	fmt.Println(c0, c1, c2)
+	fmt.Println(c0, c1, c2) // Output: 0 1 2
 
 	const (
 		North = iota // iota = 0
@@ -82,14 +82,14 @@ func main() {
 		South        // iota = 2
 		West         // iota = 3
 	)
-	fmt.Println(North, East, South, West)
+	fmt.Println(North, East, South, West) // Output: 0 1 2 3
 
 	const (
 		aa = iota * 2 // iota = 0
 		bb            // iota = 1
 		cc            // iota = 2
 	)
-	fmt.Println(aa, bb, cc)
+	fmt.Println(aa, bb, cc) // Output: 0 2 4
 
 	// x1 = -2, y1 = -4, z1 = -5
 	const (
@@ -98,5 +98,5 @@ func main() {
 		y1               // iota = 2
 		z1               // iota = 3
 	)
-	fmt.Println(x1, y1, z1)
+	fmt.Println(x1, y1, z1) // Output: -2 -4 -5
 }

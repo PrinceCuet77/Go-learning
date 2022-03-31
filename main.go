@@ -20,6 +20,6 @@ func main() {
 
 	// Println() function points out a line to stdout
 	// It belongs to package fmt
-	fmt.Println("Hello World")
-	fmt.Println(a, b, c)
+	fmt.Println("Hello World") // Output: Hello World
+	fmt.Println(a, b, c) // Output: 7 3.5 10
 }
