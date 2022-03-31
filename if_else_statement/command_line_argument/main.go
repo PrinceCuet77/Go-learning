@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	// os.Args is a command line arguments which will be 'string'
+	// os.Args is a command line arguments which will be 'slice of string'
 	// In terminal / command line cmd, I have to provide: go run main.go go python java php 50
 	fmt.Println("os.Args", os.Args)                          // Output: os.Args [/tmp/go-build4023742317/b001/exe/main go python java php 50]
 	fmt.Println("Path:", os.Args[0])                         // Output: Path: /tmp/go-build100370038/b001/exe/main
