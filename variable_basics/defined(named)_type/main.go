@@ -49,4 +49,12 @@ func main() {
 
 	distanceInMiles = mile(parisToLondon) / 0.621
 	fmt.Println(distanceInMiles) // Output: 748.792279531401
+
+	// Named type variable's data type
+	type duration int
+	var hour duration
+	fmt.Printf("hours's type: %T, hour's value: %d\n", hour, hour) // Output: hour's type: main.duration, hour's value: 0
+	
+	hour = 3600
+	fmt.Printf("hour's value %v\n", hour) // Output: hour's value 3600
 }

@@ -99,4 +99,13 @@ func main() {
 		z1               // iota = 3
 	)
 	fmt.Println(x1, y1, z1) // Output: -2 -4 -5
+
+	// It's allowed to use underscores in numbers for a better readability
+	const (
+		distance = 149_600_000 * 1000 // distance from the Sun to Earth in meter
+		speed = 299_792_458 // speed of light in m/s
+	)
+
+	const time = distance / speed // time in seconds 
+	fmt.Printf("The Sunlight reaches Earth in %v seconds.\n", time) // Output: The Sunlight reaches Earth in 499 seconds.
 }
