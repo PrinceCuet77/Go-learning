@@ -14,11 +14,11 @@ outer:
 	for index, name := range people {
 		for _, friend := range friends {
 			if name == friend {
-				fmt.Printf("Found a friend %q at index %d\n", friend, index)
+				fmt.Printf("Found a friend %q at index %d\n", friend, index) // Output: Found a friend "Mark" at index 1
 				break outer
 			}
 		}
 	}
 
-	fmt.Println("Next instruction after the break")
+	fmt.Println("Next instruction after the break") // Output: Next instruction after the break
 }
