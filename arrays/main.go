@@ -73,7 +73,7 @@ func main() {
 	// Multi-dimentional array
 	balances := [2][3]int{
 		{5, 6, 7},
-		[3]int{8, 9, 10},
+		[3]int{8, 9, 10}, // '[3]int' is optional
 	}
 	fmt.Println(balances) // Output: [[5 6 7] [8 9 10]]
 
