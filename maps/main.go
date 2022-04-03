@@ -32,21 +32,26 @@ func main() {
 	_ = m1
 
 	// 2.
+	var mp = map[int]bool{}
+	fmt.Println(mp) // Output: map[]
+
+	// 3.
 	// It's an empty map but initialized.
 	// All the elements are assigned as zero value as "".
 	people := map[string]float64{}
+	fmt.Println(people) // Output: map[]
 
 	// Now, I can add elements into 'people' map.
 	people["John"] = 21.4
 	people["Marry"] = 10
 	fmt.Println(people) // Output: map[John:21.4 Marry:10]
 
-	// 3.
+	// 4.
 	// Another way to create an initialized empty map
 	map1 := make(map[int]int)
 	map1[4] = 8 // Valid
 
-	// 4.
+	// 5.
 	balances := map[string]float64{
 		"USD": 323.11,
 		"EUR": 432.1, // The comma is mandatory
@@ -60,7 +65,7 @@ func main() {
 	balances["TK"] = 100.55 // Key does not exist so that "TK" will be added.
 	fmt.Println(balances)   // Output: map[EUR:432.1 TK:100.55 USD:100.34]
 
-	// 5.
+	// 6.
 	m := map[int]int{1: 10, 2: 20, 3: 30} // The comma is not mandatory if I declare the map in single line.
 	_ = m
 
