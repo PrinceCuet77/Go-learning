@@ -19,6 +19,7 @@ type Product struct {
 	productName string
 }
 
+// This is an example of pass by reference otherwise it will be pass by value.
 func changeProductByPointer(p *Product) {
 	(*p).price = 200 // Equivalent to p.price = 200
 	p.productName = "Bicycle"
