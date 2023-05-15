@@ -22,7 +22,7 @@ func main() {
 	fmt.Println(varsity) // Output: CUET
 
 	// Using the short declaration operator (:=) which works only in Block Scope.
-	// Can't use short declaration at Package Scope (outside main() or other function)
+	// Can't use short declaration at Package Scope but can applicable in other function.
 	// All statements at package scope must start with a go keyword (package, var, import, func etc)
 	str := "Learning golang"
 	fmt.Println(str) // Output: Learning golang
