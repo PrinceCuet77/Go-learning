@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Use mixedCase a.k.a camelCase instread of smake_case (variables or functions)
+// Use mixedCase a.k.a camelCase instread of snake_case (variables or functions)
 var maxValue = 100
 
 func writeToFile() string {
